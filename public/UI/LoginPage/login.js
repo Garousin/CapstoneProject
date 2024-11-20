@@ -6,7 +6,6 @@ const iconClose = document.querySelector('.exit');
 const passwordField = document.querySelector("#password");
 const showPasswordIcon = document.getElementById("#toggle-password");
 
-
 registerLink.addEventListener('click', ()=> {
     wrapper.classList.add('active');
 });
@@ -27,4 +26,20 @@ showPasswordIcon.addEventListener("click", function() {
   this.classList.toggle("fa-eye-slash"); // Toggle the icon class
   const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
   passwordField.setAttribute("type", type); // Toggle the password field type
+});
+
+
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Get form inputs
+    const email = document.querySelector('input[type="email"]').value;
+    const password = document.querySelector('input[type="password"]').value;
+
+    // Validation
+    if (email && password) { 
+        window.location.href = "/public/UI/Navbar/index.html"; // Redirect
+    } else {
+        alert("Please fill in all fields correctly.");
+    }
 });

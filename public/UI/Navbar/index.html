@@ -1,32 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Sage</title>
+  <title>Home Page</title>
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <script src="Home.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="container">
-    <!-- Sidebar -->
-    <aside class="sidebar" id="sidebar">
-      <button class="toggle-btn" id="toggle-btn">
-        <i class="fas fa-bars"></i>
-      </button>
-      <ul class="menu">
-        <li><i class="fas fa-home"></i><span class="home">Home</span></li>
-        <li><i class="fas fa-medal"></i><span class="achievements">Achievements</span></li>
-        <li><i class="fas fa-envelope"></i><span class="menu-text">Messages</span></li>
-        <li><i class="fab fa-discord"></i><span class="menu-text">Community</span></li>
-        <li><i class="fas fa-cog"></i><span class="menu-text">Settings</span></li>
-        <li><i class="fas fa-crown"></i><span class="menu-text">Leaderboards</span></li>
-        <li><i class="fas fa-sign-out-alt"></i><span class="menu-text">Logout</span></li>
-      </ul>
-    </aside>
-  
-    <!-- Main Section -->
+  <nav class="container">
+    <!--Sidebar-->
+    <div class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo192.png" alt="logo">
+          </span>
+          <div class="text header-text">
+            <span class="head1">CodeSage</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars" id="btn"></i>
+      </header>
+        <ul class="nav_list">
+          <li>
+            <a href="#">
+             <i class="fas fa-home"></i><span class="menu-text">Home</span>
+            </a>
+            <span class="tooltip">Home</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-trophy"></i><span class="menu-text">Achievements</span>
+            </a>
+            <span class="tooltip">Achievements</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-envelope"></i><span class="menu-text">Messages</span>
+            </a>
+            <span class="tooltip">Messages</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-users"></i><span class="menu-text">Community</span>
+            </a>
+            <span class="tooltip">Community</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-cog"></i><span class="menu-text">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-sign-out-alt"></i><span class="menu-text" id="logout">Logout</span>
+            </a>
+            <span class="tooltip">Logout</span>
+          </li>
+        </ul>
+        <div class="profile_content">
+          <div class="prof">
+            <div class="prof_details">
+              <img src="logo192.png" alt="">
+              <div class="name_prof">
+                <div class="names">Johndoe Dela Cruz</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="home_content">
+      <div class="text">HOME</div>
+    </div>
+
+
+    
+
+
+    <!--mainpage-->
     <main class="main">
       <h1 class="title">CODE SAGE</h1>
       <div class="profile">
@@ -37,7 +91,7 @@
         <button>Python</button>
       </div>
     </main>
-  </div>
+  </nav>
   <script src="Home.js"></script>
 </body>
 </html>
