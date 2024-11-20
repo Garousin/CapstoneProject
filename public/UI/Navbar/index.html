@@ -3,43 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programming Game</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Code Sage</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="Home.js"></script>
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <header class="navbar">
-    <h1>Programming Game</h1>
-    <nav>
-      <ul>
-        <li><a href="#campaign">Campaign</a></li>
-        <li><a href="#sandbox">Sandbox</a></li>
-        <li><a href="#competition">Competition</a></li>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <button class="toggle-btn" id="toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="menu">
+        <li><i class="fas fa-home"></i><span class="home">Home</span></li>
+        <li><i class="fas fa-medal"></i><span class="achievements">Achievements</span></li>
+        <li><i class="fas fa-envelope"></i><span class="menu-text">Messages</span></li>
+        <li><i class="fab fa-discord"></i><span class="menu-text">Community</span></li>
+        <li><i class="fas fa-cog"></i><span class="menu-text">Settings</span></li>
+        <li><i class="fas fa-crown"></i><span class="menu-text">Leaderboards</span></li>
+        <li><i class="fas fa-sign-out-alt"></i><span class="menu-text">Logout</span></li>
       </ul>
-    </nav>
-  </header>
-
-  <!-- Campaign Section -->
-  <section id="campaign" class="section">
-    <h2>Campaign Mode</h2>
-    <p>Learn Java and Python step by step with engaging challenges.</p>
-  </section>
-
-  <!-- Sandbox Section -->
-  <section id="sandbox" class="section">
-    <h2>Sandbox</h2>
-    <p>Experiment with code in a safe, fun environment.</p>
-  </section>
-
-  <!-- Competition Section -->
-  <section id="competition" class="section">
-    <h2>Competition</h2>
-    <p>Challenge your friends or compete globally to rank up!</p>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2024 Programming Game. All rights reserved.</p>
-  </footer>
+    </aside>
+  
+    <!-- Main Section -->
+    <main class="main">
+      <h1 class="title">CODE SAGE</h1>
+      <div class="profile">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="buttons">
+        <button>Java</button>
+        <button>Python</button>
+      </div>
+    </main>
+  </div>
+  <script src="Home.js"></script>
 </body>
 </html>

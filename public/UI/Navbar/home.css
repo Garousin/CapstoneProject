@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(0deg, rgb(19, 38, 49), rgb(59, 139, 150), rgb(122, 219, 236)) no-repeat;
+  background-size: cover;
+  color: rgba(rgb(48, 63, 66), rgb(56, 116, 139), rgb(123, 182, 250), alpha);
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #1e293b;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sidebar.expanded {
+  width: 200px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Centering the Sidebar Menu */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.menu li {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.menu li:hover {
+  background-color: #2d3b4d;
+}
+
+/* Menu Text Visibility */
+.menu-text {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.expanded .menu-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Main Section Styling */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: margin-left 0.5s ease;
+}
+
+.main.expanded {
+  margin-left: 150px;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.profile i {
+  font-size: 5em;
+  color: white;
+  margin-bottom: 30px;
+  
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.buttons button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+  color: white;
+  background-color: black;
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.buttons button:hover {
+  transform: translateY(-3px);
+  background-color: #dfddd9;
+}
+
+.buttons button:active {
+  transform: translateY(2px);
+}
