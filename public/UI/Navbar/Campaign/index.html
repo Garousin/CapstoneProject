@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <nav class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo192.png" alt="logo">
+          </span>
+          <div class="text header-text">
+            <span class="head1">CodeSage</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars" id="btn"></i>
+      </header>
+
+      <ul class="nav_list">
+        <li>
+          <a href="#">
+            <i class="fas fa-home"></i><span class="menu_text">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-trophy"></i><span class="menu_text">Achievements</span>
+          </a>
+          <span class="tooltip">Achievements</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-envelope"></i><span class="menu_text">Messages</span>
+          </a>
+          <span class="tooltip">Messages</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-users"></i><span class="menu_text">Community</span>
+          </a>
+          <span class="tooltip">Community</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i><span class="menu_text">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+        <li>
+          <a href="#" target="_self" id="logoutBtn">
+            <i class="fas fa-sign-out-alt"></i><span class="menu_text" id="logout">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
+      </ul>
+
+      <!-- Dark Mode Toggle -->
+      <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle" />
+        <label for="darkModeToggle">Dark Mode</label>
+      </div>
+
+      <div class="profile_content">
+        <div class="prof">
+          <div class="prof_details">
+            <img src="logo192.png" alt="">
+            <div class="name_prof">
+              <div class="names">Johndoe Dela Torre</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home_content">
+      <div class="text">HOME</div>
+    </div>
+
+    <!-- Main page -->
+    <main class="main">
+      <h1 class="title">CODE SAGE</h1>
+      <div class="profile">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="buttons">
+        <button>Java</button>
+        <button>Python</button>
+      </div>
+    </main>
+  </nav>
+
+  <script src="Home.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/* Light Mode Styles (Default) */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --button-bg: #4CAF50;
+    --button-text: #ffffff;
+    --sidebar-bg: #f4f4f4;
+    --sidebar-text: #333;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    transition: background-color 0.3s;
+  }
+  
+  .sidebar {
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --button-bg: #555;
+    --button-text: #ffffff;
+    --sidebar-bg: #333;
+    --sidebar-text: #f1f1f1;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  #darkModeToggle {
+    margin-right: 10px;
+  }
+  
