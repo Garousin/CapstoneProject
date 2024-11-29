@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
   <nav class="container">
-    <!-- Sidebar -->
+    <!--Sidebar-->
     <div class="sidebar">
       <header>
         <div class="image-text">
@@ -23,8 +27,13 @@
         </div>
         <i class="fa-solid fa-bars" id="btn"></i>
       </header>
-
       <ul class="nav_list">
+        <li>
+          <a href="/src/UI/Navbar/Home/profile/prof.html">
+            <i class="fa-solid fa-user"></i><span class="menu_text">Profile</span>
+          </a>
+          <span class="tooltip">Profile</span>
+        </li>
         <li>
           <a href="#">
             <i class="fas fa-home"></i><span class="menu_text">Home</span>
@@ -33,9 +42,9 @@
         </li>
         <li>
           <a href="#">
-            <i class="fas fa-trophy"></i><span class="menu_text">Achievements</span>
+            <i class="fas fa-trophy"></i><span class="menu_text">Leaderboards</span>
           </a>
-          <span class="tooltip">Achievements</span>
+          <span class="tooltip">Leaderboards</span>
         </li>
         <li>
           <a href="#">
@@ -45,9 +54,9 @@
         </li>
         <li>
           <a href="#">
-            <i class="fas fa-users"></i><span class="menu_text">Community</span>
+            <i class="fa-solid fa-shop"></i><span class="menu_text">Shop</span>
           </a>
-          <span class="tooltip">Community</span>
+          <span class="tooltip">Shop</span>
         </li>
         <li>
           <a href="#">
@@ -56,19 +65,24 @@
           <span class="tooltip">Settings</span>
         </li>
         <li>
-          <a href="#" target="_self" id="logoutBtn">
+          <a id="log_Btn">
             <i class="fas fa-sign-out-alt"></i><span class="menu_text" id="logout">Logout</span>
           </a>
           <span class="tooltip">Logout</span>
         </li>
+        <li class="mode">
+          <a>
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <span class="mode_text">Dark Mode</span>
+          </a>
+          <span class="tooltip">Dark Mode</span>
+          <div class="toggle_switch">
+            <span class="switch"></span>
+          </div>
+        </li>
       </ul>
-
-      <!-- Dark Mode Toggle -->
-      <div class="dark-mode-toggle">
-        <input type="checkbox" id="darkModeToggle" />
-        <label for="darkModeToggle">Dark Mode</label>
-      </div>
-
+      <!-- Profile -->
       <div class="profile_content">
         <div class="prof">
           <div class="prof_details">
@@ -80,24 +94,28 @@
         </div>
       </div>
     </div>
-
     <div class="home_content">
       <div class="text">HOME</div>
     </div>
 
-    <!-- Main page -->
+    <!--mainpage-->
     <main class="main">
       <h1 class="title">CODE SAGE</h1>
       <div class="profile">
-        <i class="fas fa-user-circle"></i>
+        <img src="logo192.png" alt="">
       </div>
       <div class="buttons">
         <button>Java</button>
         <button>Python</button>
       </div>
+      <div id="options" class="hidden">
+        <button>Campaign</button>
+        <button>Sandbox</button>
+        <button>Challenge</button>
+      </div>
     </main>
   </nav>
-
   <script src="Home.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="prof.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <nav class="container">
+    <!--Sidebar-->
+    <div class="sidebar">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="logo192.png" alt="logo">
+          </span>
+          <div class="text header-text">
+            <span class="head1">CodeSage</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-bars" id="btn"></i>
+      </header>
+      <ul class="nav_list">
+        <li>
+          <a href="/src/UI/Navbar/Home/profile/prof.html">
+            <i class="fa-solid fa-user"></i><span class="menu_text">Profile</span>
+          </a>
+          <span class="tooltip">Profile</span>
+        </li>
+        <li>
+          <a href="/src/UI/Navbar/Home/Main/index.html">
+            <i class="fas fa-home"></i><span class="menu_text">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-trophy"></i><span class="menu_text">Leaderboards</span>
+          </a>
+          <span class="tooltip">Leaderboards</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-envelope"></i><span class="menu_text">Messages</span>
+          </a>
+          <span class="tooltip">Messages</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-shop"></i><span class="menu_text">Shop</span>
+          </a>
+          <span class="tooltip">Shop</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-cog"></i><span class="menu_text">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+        <li>
+          <a id="log_Btn">
+            <i class="fas fa-sign-out-alt"></i><span class="menu_text" id="logout">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
+        <li class="mode">
+          <a>
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <span class="mode_text">Dark Mode</span>
+          </a>
+          <span class="tooltip">Dark Mode</span>
+          <div class="toggle_switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+      </ul>
+      <!-- Profile -->
+      <div class="profile_content">
+        <div class="prof">
+          <div class="prof_details">
+            <img src="logo192.png" alt="">
+            <div class="name_prof">
+              <div class="names">Johndoe Dela Torre</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="home_content">
+      <div class="text">PROFILE</div>
+    </div>
+
+    <!--mainpage-->
+    <main class="main">
+      <div class="profile-card">
+        <button class="edit-btn" id="edit-btn">Edit</button>
+        <div class="profile-header">
+          <img src="logo192.png" alt="Profile Picture" class="profile-image">
+          <div class="profile-info">
+            <h2 class="profile-name">Johndoe Dela Torre</h2>
+            <p class="profile-id">User ID: #12345678 <button class="copy-btn">Copy</button></p>
+          </div>
+        </div>
+        <div class="profile-body">
+          <div class="stats">
+            <div class="stat-item">
+              <i class="fas fa-gem"></i>
+              <p class="stat-title">Gems</p>
+              <p class="stat-value">120</p>
+            </div>
+            <div class="stat-item">
+              <i class="fas fa-heart"></i>
+              <p class="stat-title">Lives</p>
+              <p class="stat-value">5</p>
+            </div>
+          </div>
+          <div class="achievements">
+            <h3>Achievements</h3>
+            <ul class="achievement-list">
+              <li><i class="fas fa-medal"></i> Completed 10 Levels</li>
+              <li><i class="fas fa-star"></i> Top 1% Leaderboard</li>
+              <li><i class="fas fa-book"></i> Debugging Expert</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </nav>
+  <script src="prof.js"></script>
+</body>
+
+</html>
